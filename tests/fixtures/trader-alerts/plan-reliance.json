@@ -1,0 +1,17 @@
+{
+ "created_by": "trader-exit",
+ "symbol": "RELIANCE",
+ "exchange": "NSE",
+ "currency": "INR",
+ "side": "buy",
+ "date": "2026-10-30",
+ "setup": "orb",
+ "entry": 1255.2,
+ "stop": 1250.25,
+ "stop_label": "opening-range midpoint",
+ "target": 1265.1,
+ "target_label": "2R (two times the risk)",
+ "risk_per_share": 4.95,
+ "reward_risk": 2.0,
+ "flat_by": "15:00"
+}

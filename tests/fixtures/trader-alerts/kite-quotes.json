@@ -1,0 +1,29 @@
+{
+ "note": "SYNTHETIC test data for the India port, not market data",
+ "NSE:RELIANCE": {
+  "instrument_token": 738561,
+  "last_price": 1262.0,
+  "last_trade_time": "2026-10-30 10:00:15",
+  "ohlc": {
+   "open": 1249.0,
+   "high": 1264.0,
+   "low": 1246.5,
+   "close": 1244.3
+  },
+  "upper_circuit_limit": 1368.7,
+  "lower_circuit_limit": 1119.9
+ },
+ "NSE:SUZLON": {
+  "instrument_token": 3076609,
+  "last_price": 50.35,
+  "last_trade_time": "2026-10-30 10:00:10",
+  "ohlc": {
+   "open": 53.0,
+   "high": 53.4,
+   "low": 50.35,
+   "close": 55.95
+  },
+  "upper_circuit_limit": 61.55,
+  "lower_circuit_limit": 50.35
+ }
+}

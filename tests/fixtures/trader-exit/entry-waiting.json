@@ -1,0 +1,25 @@
+{
+ "created_by": "trader-entry",
+ "symbol": "RELIANCE",
+ "setup": "orb",
+ "side": "buy",
+ "date": "2026-10-30",
+ "status": "waiting",
+ "time": null,
+ "bar_start": null,
+ "bar_index": null,
+ "price": null,
+ "level": 1254.0,
+ "interval": "5m",
+ "opening_range": {
+  "high": 1254.0,
+  "low": 1246.5,
+  "minutes": 15
+ },
+ "exchange": "NSE",
+ "currency": "INR",
+ "cas": false,
+ "source": "yahoo",
+ "checked_at": "2026-10-30T04:27:45Z",
+ "reason": "last close 1253.90, 0.10 under the range high"
+}

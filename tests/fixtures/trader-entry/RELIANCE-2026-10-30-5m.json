@@ -1,0 +1,104 @@
+{
+ "chart": {
+  "result": [
+   {
+    "meta": {
+     "currency": "INR",
+     "symbol": "RELIANCE.NS",
+     "exchangeName": "NSI",
+     "instrumentType": "EQUITY",
+     "regularMarketTime": 1793334465,
+     "gmtoffset": 19800,
+     "timezone": "IST",
+     "exchangeTimezoneName": "Asia/Kolkata",
+     "regularMarketPrice": 1256.45,
+     "chartPreviousClose": 1244.3,
+     "previousClose": 1244.3,
+     "priceHint": 2,
+     "dataGranularity": "5m",
+     "range": "1d",
+     "note": "SYNTHETIC test data for the India port, not market data"
+    },
+    "timestamp": [
+     1793331900,
+     1793332200,
+     1793332500,
+     1793332800,
+     1793333100,
+     1793333400,
+     1793333700,
+     1793334000,
+     1793334300,
+     1793334465
+    ],
+    "indicators": {
+     "quote": [
+      {
+       "open": [
+        1249.0,
+        1249.5,
+        1252.6,
+        1253.0,
+        1252.8,
+        1253.9,
+        1255.2,
+        1257.1,
+        1256.0,
+        1256.45
+       ],
+       "high": [
+        1250.0,
+        1253.5,
+        1254.0,
+        1253.8,
+        1256.5,
+        1255.6,
+        1258.0,
+        1257.9,
+        1256.8,
+        1256.45
+       ],
+       "low": [
+        1246.5,
+        1249.0,
+        1251.5,
+        1251.2,
+        1252.0,
+        1253.5,
+        1254.8,
+        1255.0,
+        1255.5,
+        1256.45
+       ],
+       "close": [
+        1249.5,
+        1252.6,
+        1253.0,
+        1252.8,
+        1253.9,
+        1255.2,
+        1257.1,
+        1256.0,
+        1256.4,
+        1256.45
+       ],
+       "volume": [
+        180000,
+        90000,
+        70000,
+        60000,
+        65000,
+        150000,
+        80000,
+        75000,
+        30000,
+        0
+       ]
+      }
+     ]
+    }
+   }
+  ],
+  "error": null
+ }
+}

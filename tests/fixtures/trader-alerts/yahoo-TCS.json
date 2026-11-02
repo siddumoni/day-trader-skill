@@ -1,0 +1,49 @@
+{
+ "chart": {
+  "result": [
+   {
+    "meta": {
+     "currency": "INR",
+     "symbol": "TCS.NS",
+     "exchangeName": "NSI",
+     "instrumentType": "EQUITY",
+     "regularMarketPrice": 4100.0,
+     "regularMarketTime": 1793334615,
+     "regularMarketDayHigh": 4110.0,
+     "regularMarketDayLow": 4055.0,
+     "chartPreviousClose": 4050.0,
+     "previousClose": 4050.0,
+     "exchangeTimezoneName": "Asia/Kolkata",
+     "dataGranularity": "1d",
+     "range": "1d",
+     "note": "SYNTHETIC test data for the India port, not market data"
+    },
+    "timestamp": [
+     1793334615
+    ],
+    "indicators": {
+     "quote": [
+      {
+       "open": [
+        4060.0
+       ],
+       "high": [
+        4110.0
+       ],
+       "low": [
+        4055.0
+       ],
+       "close": [
+        4100.0
+       ],
+       "volume": [
+        1000000
+       ]
+      }
+     ]
+    }
+   }
+  ],
+  "error": null
+ }
+}

@@ -1,0 +1,102 @@
+{
+ "_note": "SYNTHETIC test data for trader-analyst, not real results",
+ "unit": "crore",
+ "data": [
+  {
+   "from_date": "2024-10-01",
+   "to_date": "2024-12-31",
+   "re_net_sale": 1000,
+   "re_total_expenses": 800,
+   "re_profit_before_tax": 210,
+   "re_profit_after_tax": 160,
+   "re_diluted_eps": 8.0,
+   "consolidated": "Consolidated",
+   "audited": "Unaudited",
+   "filingDate": "2024-12-28"
+  },
+  {
+   "from_date": "2025-01-01",
+   "to_date": "2025-03-31",
+   "re_net_sale": 1100,
+   "re_total_expenses": 880,
+   "re_profit_before_tax": 230,
+   "re_profit_after_tax": 175,
+   "re_diluted_eps": 8.7,
+   "consolidated": "Consolidated",
+   "audited": "Unaudited",
+   "filingDate": "2025-03-28"
+  },
+  {
+   "from_date": "2025-04-01",
+   "to_date": "2025-06-30",
+   "re_net_sale": 1200,
+   "re_total_expenses": 960,
+   "re_profit_before_tax": 250,
+   "re_profit_after_tax": 190,
+   "re_diluted_eps": 9.5,
+   "consolidated": "Consolidated",
+   "audited": "Unaudited",
+   "filingDate": "2025-06-28"
+  },
+  {
+   "from_date": "2025-07-01",
+   "to_date": "2025-09-30",
+   "re_net_sale": 1300,
+   "re_total_expenses": 1040,
+   "re_profit_before_tax": 270,
+   "re_profit_after_tax": 200,
+   "re_diluted_eps": 10.0,
+   "consolidated": "Consolidated",
+   "audited": "Unaudited",
+   "filingDate": "2025-09-28"
+  },
+  {
+   "from_date": "2025-10-01",
+   "to_date": "2025-12-31",
+   "re_net_sale": 1250,
+   "re_total_expenses": 1000,
+   "re_profit_before_tax": 260,
+   "re_profit_after_tax": 195,
+   "re_diluted_eps": 9.8,
+   "consolidated": "Consolidated",
+   "audited": "Unaudited",
+   "filingDate": "2025-12-28"
+  },
+  {
+   "from_date": "2026-01-01",
+   "to_date": "2026-03-31",
+   "re_net_sale": 1350,
+   "re_total_expenses": 1080,
+   "re_profit_before_tax": 285,
+   "re_profit_after_tax": 215,
+   "re_diluted_eps": 10.7,
+   "consolidated": "Consolidated",
+   "audited": "Unaudited",
+   "filingDate": "2026-03-28"
+  },
+  {
+   "from_date": "2026-04-01",
+   "to_date": "2026-06-30",
+   "re_net_sale": 1500,
+   "re_total_expenses": 1200,
+   "re_profit_before_tax": 310,
+   "re_profit_after_tax": 235,
+   "re_diluted_eps": 11.7,
+   "consolidated": "Consolidated",
+   "audited": "Unaudited",
+   "filingDate": "2026-06-28"
+  },
+  {
+   "from_date": "2026-07-01",
+   "to_date": "2026-09-30",
+   "re_net_sale": 1560,
+   "re_total_expenses": 1250,
+   "re_profit_before_tax": 320,
+   "re_profit_after_tax": 240,
+   "re_diluted_eps": 12.0,
+   "consolidated": "Consolidated",
+   "audited": "Unaudited",
+   "filingDate": "2026-09-28"
+  }
+ ]
+}

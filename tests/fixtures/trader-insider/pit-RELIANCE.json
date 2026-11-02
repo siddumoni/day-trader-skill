@@ -1,0 +1,5 @@
+{"_note":"SYNTHETIC test data for trader-insider, not real filings","data":[
+ {"symbol":"RELIANCE","company":"Reliance Industries Limited","acqName":"Synthetic Promoter Holdings Pvt Ltd","personCategory":"Promoter Group","secAcq":"250000","secVal":"321500000","tdpTransactionType":"Buy","acqfromDt":"26-Oct-2026","acqtoDt":"27-Oct-2026","intimDt":"29-Oct-2026","acqMode":"Market Purchase","secType":"Equity Shares","befAcqSharesNo":"1000000","afterAcqSharesNo":"1250000"},
+ {"symbol":"RELIANCE","company":"Reliance Industries Limited","acqName":"Synthetic Director A","personCategory":"Director","secAcq":"5000","secVal":"6400000","tdpTransactionType":"Sell","acqfromDt":"20-Oct-2026","acqtoDt":"21-Oct-2026","intimDt":"30-Oct-2026","acqMode":"Market Sale","secType":"Equity Shares"},
+ {"symbol":"RELIANCE","company":"Reliance Industries Limited","acqName":"","personCategory":"Employee","secAcq":"-","secVal":"-","tdpTransactionType":"Pledge Creation","acqfromDt":"-","acqtoDt":"-","intimDt":"30-Oct-2026","acqMode":"Pledge"}
+]}

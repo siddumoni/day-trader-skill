@@ -1,0 +1,49 @@
+{
+ "chart": {
+  "result": [
+   {
+    "meta": {
+     "currency": "INR",
+     "symbol": "ITC.NS",
+     "exchangeName": "NSI",
+     "instrumentType": "EQUITY",
+     "regularMarketPrice": 410.35,
+     "regularMarketTime": 1793334615,
+     "regularMarketDayHigh": 420.5,
+     "regularMarketDayLow": 409.9,
+     "chartPreviousClose": 420.0,
+     "previousClose": 420.0,
+     "exchangeTimezoneName": "Asia/Kolkata",
+     "dataGranularity": "1d",
+     "range": "1d",
+     "note": "SYNTHETIC test data for the India port, not market data"
+    },
+    "timestamp": [
+     1793334615
+    ],
+    "indicators": {
+     "quote": [
+      {
+       "open": [
+        419.0
+       ],
+       "high": [
+        420.5
+       ],
+       "low": [
+        409.9
+       ],
+       "close": [
+        410.35
+       ],
+       "volume": [
+        1000000
+       ]
+      }
+     ]
+    }
+   }
+  ],
+  "error": null
+ }
+}

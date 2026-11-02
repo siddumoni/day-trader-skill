@@ -1,0 +1,5 @@
+[
+ {"symbol":"RELIANCE","desc":"Outcome of Board Meeting","attchmntText":"Board approved unaudited financial results for the quarter ended September 30, 2026 and an interim dividend; record date fixed.","an_dt":"30-Oct-2026 14:05:33","attchmntFile":"https://example.test/nse/a1.pdf","seq_id":"900001"},
+ {"symbol":"RELIANCE","desc":"Disclosure under SEBI Takeover Regulations","attchmntText":"Encumbrance: pledge of shares created by promoter group entity.","an_dt":"30-Oct-2026 09:40:00","attchmntFile":"https://example.test/nse/a2.pdf","seq_id":"900002"},
+ {"symbol":"RELIANCE","desc":"","attchmntText":"","an_dt":"30-Oct-2026 09:00:00","seq_id":"900003"}
+]

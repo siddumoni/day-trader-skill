@@ -1,0 +1,25 @@
+{
+ "created_by": "trader-entry",
+ "symbol": "RELIANCE",
+ "setup": "orb",
+ "side": "buy",
+ "date": "2026-10-30",
+ "status": "triggered",
+ "time": "9:45 AM",
+ "bar_start": "09:40",
+ "bar_index": 5,
+ "price": 1255.2,
+ "level": 1254.0,
+ "interval": "5m",
+ "opening_range": {
+  "high": 1254.0,
+  "low": 1246.5,
+  "minutes": 15
+ },
+ "exchange": "NSE",
+ "currency": "INR",
+ "cas": false,
+ "source": "yahoo",
+ "checked_at": "2026-10-30T04:27:45Z",
+ "reason": "the 9:40 bar closed above the range high"
+}
