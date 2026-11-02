@@ -629,7 +629,7 @@ def build_plan(a, now_utc):
             raise PlanError("an atr stop needs at least 3 closed %s bars of %s on %s by the entry; found %d"
                             % (info["interval"], info["symbol"], day, len(bars)))
         atr, atr_n = atr_of(bars)
-    tick = D(cfg.get("tick_size") or TICK, "tick_size")
+    tick = D(a.tick or cfg.get("tick_size") or TICK, "tick_size")
     c = compute(info["entry"], stop_rule, stop_param, target_rule, target_param, info["or_high"], info["or_low"],
                 atr, atr_n, tick)
     qty, qty_source = pick_qty(a.qty, cfg, c)
@@ -779,6 +779,8 @@ def main(argv=None):
     p.add_argument("--stop", help="or-mid (orb default), or-low, price:X, pct:X, atr:K")
     p.add_argument("--target", help="2R (default), 1R, 1.5R, price:X")
     p.add_argument("--qty", type=int, help="shares, to price the charges (default: what your max loss buys)")
+    p.add_argument("--tick", type=float, help="this stock's tick in rupees (Kite search_instruments tick_size; "
+                   "some stocks trade on Rs 0.10). Default: tick_size in the config, 0.05")
     p.add_argument("--cas", action="store_true", help="an F&O stock: continuous trading ends 15:15, MIS square-off 15:12")
     p.add_argument("--flat-by", help="HH:MM India time (default: config flat_by, 15:00)")
     p.add_argument("--config", default="trader/config.json")

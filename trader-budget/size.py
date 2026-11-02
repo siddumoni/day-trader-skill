@@ -336,9 +336,9 @@ def size_trade(plan, cfg, budget=None, limit=None, price=None, cash=None, today=
     today   India date (YYYY-MM-DD); a plan for another day is refused"""
     c = dict(DEFAULTS)
     c.update(cfg or {})
-    tick = tick_of(c)
     if not isinstance(plan, dict):
         raise SizeError("the plan is not a JSON object")
+    tick = _f(plan.get("tick_size")) or tick_of(c)   # the plan's tick (per instrument) wins over the config
     sym = _sym(plan.get("symbol") or "")
     side = str(plan.get("side") or "buy").strip().lower()
     if side != "buy":

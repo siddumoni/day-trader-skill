@@ -48,10 +48,10 @@ folder) into `~/.claude/skills/`:
 cp -r trader-* ~/.claude/skills/
 ```
 
-Or as a plugin, in Claude Code:
+Or as a plugin from a copy of this repository you host yourself:
 
 ```
-/plugin marketplace add siddumoni/day-trader-skill
+/plugin marketplace add <your-github-user>/<your-repo>
 /plugin install day-trader-india@day-trader-india
 ```
 
@@ -79,7 +79,7 @@ working folder and set your own limits. Money values end in `_inr`.
   buy side, GST 18% on brokerage plus exchange plus SEBI fees. These are
   estimates: your contract note is the truth. Charges are why a 1.5R target
   can be about 1.1R net, and the sizer and risk check count them.
-- **Tick** Rs 0.05, **circuit bands** read from Kite quotes, whole shares,
+- **Tick** Rs 0.05 for most stocks, but it is per instrument (RELIANCE showed Rs 0.10 on Kite's 2026-11-02 listing): read `tick_size` from Kite `search_instruments` and pass `exit.py --tick`. **Circuit bands** read from Kite quotes, whole shares,
   long side only, MIS product, no margin, no F&O unless you turn it on.
 - **Kite stop and target are separate orders**, not a bracket (GTT does not
   cover MIS). `/trader-broker protect` prints the stop first, then the
@@ -119,8 +119,14 @@ range and entry rule, exit maths and net R, the time machine, the sizer, every
 risk check, the broker tickets and yes rules, alerts, quarterly arithmetic and
 disclosure delays.
 
-Not verified: any live call. The build sandbox could not reach NSE, Yahoo or
-Kite, so these were never run for real: the NSE endpoints and their JSON field
+Verified live, once (Mon 2026-11-02, RELIANCE, through the Kite connector,
+read-only): `search_instruments`, `get_quotes` and `get_historical_data` return
+the shapes the converter expects; the whole chain (entry, exit, budget, risk)
+ran on real 5-minute candles with Kite's real circuit band. That run found the
+per-instrument tick bug, now fixed and tested. No order was placed.
+
+Not verified: NSE and Yahoo calls (the build sandbox gets 403 from both) and
+order placement. These were never run for real: the NSE endpoints and their JSON field
 names (written from memory, parsed defensively, unreadable items reported as
 missing), the Kite connector's exact tool arguments, and live prices. Treat your
 first live run as a test: paper or one share.

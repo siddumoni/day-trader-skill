@@ -326,7 +326,8 @@ def check(orders, cfg, portfolio=None, prices=None, state=None, today=None, now=
     circuits     {SYM: (lower, upper)} from Kite quotes, when known"""
     c = dict(DEFAULTS)
     c.update(cfg or {})
-    tick = _f(c.get("tick_size")) or 0.05
+    cfg_tick = _f(c.get("tick_size")) or 0.05
+    tick = cfg_tick
     costs = c.get("costs") or None
     prices = {str(k).upper(): float(v) for k, v in (prices or {}).items() if _f(v)}
     circuits = {str(k).upper(): v for k, v in (circuits or {}).items()}
@@ -380,6 +381,7 @@ def check(orders, cfg, portfolio=None, prices=None, state=None, today=None, now=
         variety = str(o.get("variety", "regular")).strip().lower()
         qty = o.get("quantity")
         plan = o.get("plan") if isinstance(o.get("plan"), dict) else {}
+        tick = _f(plan.get("tick_size")) or cfg_tick   # per instrument: Kite lists it (some stocks trade on Rs 0.10)
         value = None
 
         # format

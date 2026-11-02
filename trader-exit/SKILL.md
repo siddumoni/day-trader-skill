@@ -28,10 +28,16 @@ python3 "${CLAUDE_SKILL_DIR}/exit.py" plan --symbol RELIANCE --entry 1255.90 --o
 python3 "${CLAUDE_SKILL_DIR}/exit.py" show
 ```
 
-Other flags: `--stop`, `--target`, `--qty`, `--cas` (F&O stock),
+Other flags: `--stop`, `--target`, `--qty`, `--tick`, `--cas` (F&O stock),
 `--flat-by 15:00`, `--config`, `--now "2026-10-30 09:50"` (IST), `--json`.
 
 ## The rules
+
+- **Tick is per stock.** Most NSE stocks trade on a Rs 0.05 tick, but Kite's
+  `search_instruments` lists each stock's own `tick_size`: RELIANCE showed
+  0.1 on 2026-11-02. Look it up and pass `--tick 0.1`; the plan carries it, and
+  trader-budget and trader-risk then use it. A stop or target off the tick is
+  rejected by Kite.
 
 - **Stop**: opening-range midpoint by default, rounded to the tick on the safe
   side (a stop never ends up closer than asked). It must be below the entry and

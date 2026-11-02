@@ -42,6 +42,9 @@ All money is in rupees. Defaults: budget 1,00,000, `cash_buffer_pct` 10,
 
 ## What it decides
 
+0. The tick comes from the plan (set by `exit.py --tick`, from Kite's
+   `tick_size` for that stock) and falls back to the config's `tick_size`.
+
 1. Shares from the max loss: the loss at the stop **plus round-trip charges**
    must stay under `max_loss_per_trade_inr`. Charges (brokerage, STT, exchange
    and SEBI fees, stamp, GST) come from `nse_market.py`: estimates of
