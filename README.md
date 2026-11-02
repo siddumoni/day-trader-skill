@@ -48,10 +48,10 @@ folder) into `~/.claude/skills/`:
 cp -r trader-* ~/.claude/skills/
 ```
 
-Or as a plugin from a copy of this repository you host yourself:
+Or as a plugin, in Claude Code:
 
 ```
-/plugin marketplace add <your-github-user>/<your-repo>
+/plugin marketplace add siddumoni/day-trader-skill
 /plugin install day-trader-india@day-trader-india
 ```
 
