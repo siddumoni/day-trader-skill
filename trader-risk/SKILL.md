@@ -24,6 +24,8 @@ The gate between sizing and the broker. It reads `trader/orders.json`, checks
 each order, and records PASS or BLOCK in `trader/state/risk.json`. Every
 check is plain arithmetic on your rules.
 
+On Windows, `python3` is usually missing: use `python` (or `py -3`) in place of `python3` in the commands below.
+
 ```bash
 python3 "${CLAUDE_SKILL_DIR}/check.py"                       # checks trader/orders.json
 python3 "${CLAUDE_SKILL_DIR}/check.py" --now "2026-10-30 10:15"

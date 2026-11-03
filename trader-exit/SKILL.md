@@ -21,6 +21,8 @@ argument-hint: "[--stop or-mid|or-low|PRICE|N%|NxATR] [--target 2R|PRICE] [--qty
 
 The plan is set before the entry. Prices are rupees on the Rs 0.05 tick.
 
+On Windows, `python3` is usually missing: use `python` (or `py -3`) in place of `python3` in the commands below.
+
 ```bash
 python3 "${CLAUDE_SKILL_DIR}/exit.py" plan                              # from trader/entry.json
 python3 "${CLAUDE_SKILL_DIR}/exit.py" plan --target 3R --qty 59 --write # also save trader/plan.json

@@ -41,6 +41,8 @@ run during the trade; analyst and insider run on a schedule you choose.
 
 ## Install
 
+**Windows:** install Python 3.8+ from python.org (tick "Add python.exe to PATH"); the command is `python` or `py -3`, not `python3`, which on Windows is a Microsoft Store shortcut that fails. Use `Copy-Item -Recurse` where this page says `cp -r`, and `%USERPROFILE%\.claude\skills` for `~/.claude/skills`.
+
 Copy the eleven `trader-*` folders and `nse_market.py` (already inside each
 folder) into `~/.claude/skills/`:
 

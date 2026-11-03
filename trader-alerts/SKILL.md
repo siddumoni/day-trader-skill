@@ -23,6 +23,8 @@ Alerts only tell you. They never place or cancel an order. Run `check`
 repeatedly (every minute or so, by hand or through a loop) and each rule
 rings once.
 
+On Windows, `python3` is usually missing: use `python` (or `py -3`) in place of `python3` in the commands below.
+
 ```bash
 python3 "${CLAUDE_SKILL_DIR}/alerts.py" clock                       # is the NSE open? next open
 python3 "${CLAUDE_SKILL_DIR}/alerts.py" clock --cas                 # for an F&O stock

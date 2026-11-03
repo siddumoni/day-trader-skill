@@ -26,6 +26,8 @@ again. `paper` in `trader/config.json` defaults to **true**, which means
 Set `paper` to false only when you want Claude to place it through the Kite
 connector, and even then it asks twice.
 
+On Windows, `python3` is usually missing: use `python` (or `py -3`) in place of `python3` in the commands below.
+
 ```bash
 python3 "${CLAUDE_SKILL_DIR}/ticket.py" show                       # tickets for orders that PASSED trader-risk
 python3 "${CLAUDE_SKILL_DIR}/ticket.py" approve --index 1 --reply "yes"

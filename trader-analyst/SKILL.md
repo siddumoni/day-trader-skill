@@ -21,6 +21,8 @@ argument-hint: "SYMBOL [SYMBOL ...] [--quarters N] [--standalone]"
 Reads reported numbers and does the arithmetic. It reports what changed; it
 does not say whether to buy.
 
+On Windows, `python3` is usually missing: use `python` (or `py -3`) in place of `python3` in the commands below.
+
 ```bash
 python3 "${CLAUDE_SKILL_DIR}/facts.py" RELIANCE
 python3 "${CLAUDE_SKILL_DIR}/facts.py" RELIANCE TCS "M&M" --quarters 8

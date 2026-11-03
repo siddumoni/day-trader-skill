@@ -20,6 +20,8 @@ argument-hint: "SYMBOL [--setup orb|level] [--level PRICE]"
 Calls the entry on a closed bar, never on a bar still forming. It does not
 place anything.
 
+On Windows, `python3` is usually missing: use `python` (or `py -3`) in place of `python3` in the commands below.
+
 ```bash
 python3 "${CLAUDE_SKILL_DIR}/entry.py" check RELIANCE                 # 15-minute range, 5-minute bars
 python3 "${CLAUDE_SKILL_DIR}/entry.py" check RELIANCE --write         # also save trader/entry.json

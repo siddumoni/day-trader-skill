@@ -19,6 +19,8 @@ argument-hint: "[SYMBOL ...] [--hours N]"
 Reads public headlines and NSE announcements for your symbols and prints only
 what is new. Headlines are leads, not facts: open the story before acting.
 
+On Windows, `python3` is usually missing: use `python` (or `py -3`) in place of `python3` in the commands below.
+
 ```bash
 python3 "${CLAUDE_SKILL_DIR}/news.py"                          # watchlist + plan + portfolio symbols
 python3 "${CLAUDE_SKILL_DIR}/news.py" --tickers RELIANCE TCS "M&M" --hours 12

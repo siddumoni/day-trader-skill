@@ -21,6 +21,8 @@ argument-hint: "[--budget INR] [--limit PRICE | --market] [--write]"
 
 Turns a plan into a share count and one order. It never places anything.
 
+On Windows, `python3` is usually missing: use `python` (or `py -3`) in place of `python3` in the commands below.
+
 ```bash
 python3 "${CLAUDE_SKILL_DIR}/size.py"                          # reads trader/plan.json and trader/config.json
 python3 "${CLAUDE_SKILL_DIR}/size.py" --write                  # also write trader/orders.json

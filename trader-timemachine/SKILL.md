@@ -23,6 +23,8 @@ A simulation, not a prediction. It shows how a plan would have fared on the
 stock's own recent behaviour, so you can see whether you are looking at an edge
 or a coin flip that charges turn into a loss.
 
+On Windows, `python3` is usually missing: use `python` (or `py -3`) in place of `python3` in the commands below.
+
 ```bash
 python3 "${CLAUDE_SKILL_DIR}/timemachine.py" run                    # trader/plan.json, 10,000 replays, seed 19
 python3 "${CLAUDE_SKILL_DIR}/timemachine.py" run --qty 59 --write   # also save trader/timemachine.json

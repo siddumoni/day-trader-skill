@@ -26,6 +26,8 @@ flipping through 2,000 charts.
 
 `${CLAUDE_SKILL_DIR}` is this skill's folder. All times are India time (IST).
 
+On Windows, `python3` is usually missing: use `python` (or `py -3`) in place of `python3` in the commands below.
+
 ```bash
 python3 "${CLAUDE_SKILL_DIR}/scan.py" universe --offline EQUITY_L.csv     # -> trader/universe.txt
 python3 "${CLAUDE_SKILL_DIR}/scan.py" daily                              # before 09:15: daily setups

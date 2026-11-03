@@ -21,6 +21,8 @@ Public disclosures, not tips. A filing shows what someone did days ago, for
 reasons the data cannot show. It is context for a trade, never a reason by
 itself.
 
+On Windows, `python3` is usually missing: use `python` (or `py -3`) in place of `python3` in the commands below.
+
 ```bash
 python3 "${CLAUDE_SKILL_DIR}/insider.py" pit --symbols RELIANCE TCS            # SEBI PIT disclosures
 python3 "${CLAUDE_SKILL_DIR}/insider.py" pit --side buy --min-crore 1          # only promoter/insider buys over Rs 1 crore
